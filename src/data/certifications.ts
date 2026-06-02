@@ -1,5 +1,10 @@
 export const certifications = [
   {
+    name: "Introdução ao Desenvolvimento com IA",
+    issuer: "Cod3r",
+    year: "mai 2026",
+  },
+  {
     name: "Next.js App Router e Testes",
     issuer: "Rocketseat",
     year: "2026",
