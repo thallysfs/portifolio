@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import { Footer } from "@/components/footer";
 import { Navbar } from "@/components/navbar";
 import { ThemeProvider } from "@/components/theme-provider";
+import { withBasePath } from "@/lib/site";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -47,7 +48,7 @@ export const metadata: Metadata = {
       "Engenheiro de Software Fullstack com 5+ anos de experiência em React, Next.js, Node.js e .NET Core.",
     images: [
       {
-        url: "/og.png",
+        url: withBasePath("/og.png"),
         width: 1200,
         height: 630,
         alt: "Thallys de Freitas Soares — Engenheiro de Software Fullstack",
@@ -59,7 +60,7 @@ export const metadata: Metadata = {
     title: "Thallys de Freitas Soares — Engenheiro de Software Fullstack",
     description:
       "Engenheiro de Software Fullstack com 5+ anos de experiência em React, Next.js, Node.js e .NET Core.",
-    images: ["/og.png"],
+    images: [withBasePath("/og.png")],
   },
   robots: {
     index: true,

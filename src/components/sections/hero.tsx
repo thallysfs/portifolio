@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Container } from "@/components/ui/container";
 import { GithubIcon, LinkedInIcon, WhatsAppIcon } from "@/components/icons/brand";
 import { profile } from "@/data/profile";
+import { withBasePath } from "@/lib/site";
 
 const SOCIALS = [
   { name: "GitHub", href: profile.github, icon: GithubIcon },
@@ -88,7 +89,7 @@ export function Hero() {
             <Button href="#contact" variant="secondary" size="lg">
               Falar comigo
             </Button>
-            <Button href="/cv.pdf" variant="ghost" size="lg" external>
+            <Button href={withBasePath("/cv.pdf")} variant="ghost" size="lg" external>
               <Download className="h-4 w-4" />
               Currículo
             </Button>
@@ -124,7 +125,7 @@ export function Hero() {
         <div className="animate-scale-in order-1 mx-auto w-full max-w-sm lg:order-2 lg:max-w-none">
           <div className="relative aspect-[3/4] w-full overflow-hidden rounded-2xl border border-border bg-surface shadow-2xl">
             <Image
-              src="/images/profile.jpg"
+              src={withBasePath("/images/profile.jpg")}
               alt={`Foto de ${profile.name}`}
               fill
               priority
