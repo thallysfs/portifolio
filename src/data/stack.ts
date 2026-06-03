@@ -2,6 +2,7 @@ export const stack = {
   frontend: [
     "React.js",
     "Next.js",
+    "React Native",
     "Vue.js",
     "TypeScript",
     "JavaScript",
@@ -10,6 +11,8 @@ export const stack = {
     "Zustand",
     "HTML5",
     "CSS3",
+    "Acessibilidade & UX/UI",
+    "Figma",
   ],
   backend: [
     "Node.js",
@@ -21,8 +24,9 @@ export const stack = {
     "REST APIs",
   ],
   quality: [
-    "Jest",
+    "Testes unitários (Jest)",
     "Playwright",
+    "Design Systems",
     "Clean Code",
     "Microfrontends",
     "Code Review",
@@ -36,8 +40,9 @@ export const stack = {
     "GitLab",
     "Docker",
     "GitHub Actions",
-    "Figma",
     "Cursor",
     "GitHub Copilot",
+    "AI-Assisted Development",
+    "Engenharia de Prompt",
   ],
 } as const;
